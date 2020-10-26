@@ -60,23 +60,3 @@ class LinkedList(object):
             print("Node: ", tempnode.get_data())
             tempnode = tempnode.get_next()
 
-
-# create a linked list and insert some items
-itemlist = LinkedList()
-itemlist.insert(38)
-itemlist.insert(49)
-itemlist.insert(13)
-itemlist.insert(15)
-
-itemlist.dump_list()
-
-# exercise the list
-print("Item count: ", itemlist.get_count())
-print("Finding item: ", itemlist.find(13))
-print("Finding item: ", itemlist.find(78))
-
-# delete an item
-itemlist.deleteAt(3)
-print("Item count: ", itemlist.get_count())
-print("Finding item: ", itemlist.find(38))
-itemlist.dump_list()
